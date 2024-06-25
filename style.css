@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .instagram-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .instagram-button:hover {
+    background-color: #555;
+  }
+  
+  .textbox {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .textbox:focus {
+    border-color: #2196F3;
+  }
+  
+  .submit-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .counter {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
